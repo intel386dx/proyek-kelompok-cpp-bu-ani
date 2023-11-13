@@ -91,6 +91,7 @@ Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:
 1. Membuka terminal.
 2. Menuju ke direktori `src`, dimana kode sumber program berada.
 3. Menjalankan `make`.
+4. Hasil kompilasi dapat ditemukan pada direktori `dist` pada akar repositori.
 
 
 ## 4. Cara Kerja Program
