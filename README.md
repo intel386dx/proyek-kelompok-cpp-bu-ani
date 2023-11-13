@@ -82,7 +82,13 @@ Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus denga
 
 ## 2. Alat yang Diperlukan
 
-Alat-alat yang diperlukan hanyalah sebuah komputer dengan sistem operasi _Windows_, _Linux_, atau yang lainnya, dan sebuah alat kompilasi kode C++. Kami menggunakan sistem operasi _Linux_ dan alat kompilasi GCC (_GNU Compiler Collection_) yang bebas dan sumber terbuka.
+Alat-alat yang diperlukan hanyalah sebuah komputer dengan sistem operasi _Windows_, _Linux_, atau yang lainnya, sebuah alat kompilasi kode C++, dan _GNU make_. Kami menggunakan sistem operasi _Linux_ dan alat kompilasi GCC (_GNU Compiler Collection_) yang bebas dan sumber terbuka.
+
+Untuk memasang di sistem Linux Debian atau Ubuntu, jalankan:
+
+```
+sudo apt install gcc g++ binutils make
+```
 
 ## 3. Cara Kompilasi Program
 
