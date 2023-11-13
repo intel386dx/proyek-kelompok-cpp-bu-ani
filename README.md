@@ -69,7 +69,7 @@ Untuk menjalankan sebuah program C++, program tersebut harus melewati tahap _kom
 
 Bangun ruang adalah bangun yang memiliki panjang, lebar, dan juga tinggi. Bangun ruang juga bisa disebut bangun tiga-dimensi. Contoh-contoh bangun ruang antara lain kubus, balok, bola, limas, kerucut, piramida, dan sebagainya.
 
-Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus dengan informasi yang diberikan pengguna melalui _standard input_.
+Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus dengan informasi yang diberikan pengguna melalui _standard input_. Program ini kami tulis dengan dua cara, yaitu prosedural dan fungsional.
 
 ## 2. Alat yang Diperlukan
 
