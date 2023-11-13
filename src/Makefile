@@ -1,11 +1,13 @@
-COMPILER_EXEC = gcc
+COMPILER_EXEC = g++
 COMPILER_FLAGS = -O0 -static -fpermissive
+COMPILE_DIR = ../dist
 
-all: functional.cpp procedural.cpp
+.PHONY: all
 
-%.cpp: %
-# $< here means: the input filename
-# $@ here means: the output filename
+all: functional procedural
 
-# Feel free to adjust the command line below according to your setup
-	$(COMPILER_EXEC) $(COMPILER_FLAGS) $< -o $@
+$(COMPILE_DIR):
+	mkdir $(COMPILE_DIR)
+
+%: %.cpp $(COMPILE_DIR)
+	$(COMPILER_EXEC) $(COMPILER_FLAGS) $< -o ../dist/$@
