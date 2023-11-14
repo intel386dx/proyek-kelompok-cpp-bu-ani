@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Laporan Proyek PAS Semester 5 - Menghitung Volume Kubus - Menggunakan Bahasa Pemrograman C++</title>
+        <style>
+            body {
+                font-family: serif;
+                font-size: 13pt;
+                width: 21cm;
+                margin: 1cm auto;
+            }
+            code {
+                border: 1px solid;
+                padding: 0 4pt;
+            }
+            pre {
+                margin: 0.5em 0;
+                overflow-x: auto;
+            }
+            pre code, pre samp {
+                display: block;
+                padding: 1em;
+                background-color: transparent;
+                border: 1px solid;
+            }
+            pre samp {
+                background-color: black;
+                color: white;
+                text-wrap: wrap;
+            }
+            p.first-indent {
+                text-indent: 1cm;
+            }
+            .header {
+                text-align: center;
+                page-break-after: always;
+                padding: 0 1em;
+                padding-bottom: 1em;
+            }
+            .header .title {
+                font-size: 1.25em;
+                font-weight: bold;
+            }
+            .header .logo {
+                margin: 2cm 0;
+            }
+            .header .title p,
+            .header .lower p  {
+                margin: 0;
+            }
+            .header address {
+                font-style: normal;
+            }
+            .header ol, .header ul {
+                padding-left: 0;
+            }
+            .section {
+                margin: 1cm 0;
+                padding: 0 1em;
+            }
+            .nobreak {
+                page-break-inside: avoid;
+            }
+            h1 {
+                text-align: center;
+                border-bottom: 2px solid;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            @media print {
+                body {
+                    margin: 2cm 1cm;
+                    width: 17cm;
+                }
+                .header, .section {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .header .logo {
+                    margin: 6cm 0;
+                }
+                hr.page-break {
+                    border: none;
+                }
+                pre {
+                    word-wrap: break-word;
+                    text-overflow: inherit;
+                    white-space: pre-wrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header" aria-role="sectionhead">
+            <div class="title">
+                <p>Laporan Proyek PAS Semester 5</p>
+                <p>Menghitung Volume Kubus</p>
+                <p>Menggunakan Bahasa Pemrograman C++</p>
+            </div>
+            <img src="_assets/logo_mtsn.gif" alt="Logo MTs Negeri 1 Lumajang" class="logo">
+            <div class="lower">
+                <b>Dikerjakan oleh :</b>
+                <ol>
+                    <li>Hilman Ahwas Adliyansyah</li>
+                    <li>Mochammad Tegar Firdaus</li>
+                </ol>
+
+                <div class="title">MTs Negeri 1 Lumajang</div>
+                <address>Jl. Citandui No. 75 Kel. Rogotrunan, Lumajang</address>
+
+                <p>2023</p>
+            </div>
+        </div>
+        
+        <div class="page-break"></div>
+
+        <div class="section" aria-role="section">
+            <h1>Kata Pengantar</h1>
+
+            <p>Assalamualaikum Wr. Wb.</p>
+
+            <p class="first-indent">
+                Puji syukur kita panjatkan kehadirat Allah SWT yang telah memberikan rahmat serta hidayah-Nya sehingga kami bisa
+                menyelesaikan tugas proyek yang berjudul “Menghitung Volume Kubus Menggunakan Bahasa Pemrograman C++”.
+            </p>
+            <p class="first-indent">
+                Terima kasih atas Ustadzah Nurul Izza Rahmaniya selaku guru Informatika yang telah meluangkan waktunya untuk kami
+                dan telah memberi saran dan masukan yang sangat membantu bagi kami untuk menyelesaikan proyek ini.
+            </p>
+            <p class="first-indent">
+                Di samping itu, kami berterima kasih kepada Ustadz Jailani S.Ag.Ma selaku Kepala Sekolah Madrasah Tsanawiyah
+                Negeri 1 Lumajang dan ucap dari kami kepada pembaca yang membaca laporan ini.
+            </p>
+            <p class="first-indent">
+                Kami menyadari bahwa laporan hasil percobaan ini masih jauh dari kata sempurna, jadi kami sangat mengharapkan
+                masukan dari para pembaca. Akhir kata, kami mengucapkan sekali lagi terima kasih kepada pembaca yang membaca
+                laporan ini.
+            </p>
+
+            <p>Wassalamualaikum Wr. Wb.</p>
+
+            <p>Penulis</p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="section" aria-role="section">
+            <h1>Tujuan</h1>
+            <p class="first-indent">
+                Adapun tujuan kami dengan proyek ini adalah untuk memenuhi tugas proyek mata pelajaran Informatika dan untuk
+                mempelajari bahasa pemrograman C++ lebih dalam lagi.
+            </p>
+        </div>
+
+        <div class="section" aria-role="section">
+            <h1>Kajian Teori</h1>
+            <div class="section" aria-role="section">
+                <h2>1. Bahasa Pemrograman C++</h2>
+                <p>
+                    C++ adalah salah satu bahasa pemrograman tertua di dunia. C++ merupakan tambahan untuk bahasa pemrograman
+                    C. Artinya, kode C yang valid juga merupakan kode C++ yang valid pula.
+                </p>
+                <p>
+                    Untuk menjalankan sebuah program C++, program tersebut harus melewati tahap <i>kompilasi</i> supaya dapat
+                    dijalankan oleh komputer dengan performa maksimal. Ada banyak alat-alat kompilasi untuk C++ yang bisa Anda
+                    pilih, diantaranya GCC (<i>GNU Compiler Collection</i>) dan Microsoft Visual C++.
+                </p>
+            </div>
+            <div class="section" aria-role="section">
+                <h2>2. Bangun Ruang</h2>
+                <p>
+                    Bangun ruang adalah bangun yang memiliki panjang, lebar, dan juga tinggi. Bangun ruang juga bisa disebut
+                    bangun tiga-dimensi. Contoh-contoh bangun ruang antara lain kubus, balok, bola, limas, kerucut, piramida,
+                    dan sebagainya.
+                </p>
+                <p>
+                    Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus dengan informasi yang
+                    diberikan pengguna melalui <i>standard input</i>. Program ini kami tulis dengan dua cara, yaitu prosedural
+                    (<code>procedural.cpp</code>) dan fungsional (<code>functional.cpp</code>).
+                </p>
+            </div>
+        </div>
+        
+        <div class="section" aria-role="section">
+            <h1>Alat dan Bahan</h1>
+            <p>Kami menggunakan peralatan sebagaimana berikut:</p>
+            <ol>
+                <li>Komputer dengan sistem operasi Linux</li>
+                <li>GNU GCC untuk mengkompilasi program</li>
+                <li>GNU make untuk membantu proses kompilasi</li>
+            </ol>
+            <div class="nobreak">
+                <p>Untuk memasang di sistem Linux Debian atau Ubuntu, jalankan:</p>
+                <pre><code>sudo apt install gcc g++ binutils make</code></pre>
+            </div>
+        </div>
+
+        <div class="section" aria-role="section">
+            <h1>Langkah-Langkah Kompilasi Program</h1>
+            <p>Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:</p>
+            <ol>
+                <li>Membuka terminal.</li>
+                <li>Menuju ke direktori `src`, dimana kode sumber program berada.</li>
+                <li>Menjalankan skrip Makefile dengan mengetikkan `make`.</li>
+                <li>Hasil kompilasi dapat ditemukan pada direktori `dist` pada akar repositori.</li>
+            </ol>
+        </div>
+
+        <div class="section" aria-role="section">
+            <h1>Cara Kerja Program</h1>
+            <p>Program bekerja sebagaimana berikut:</p>
+            <ol>
+                <li>Pengguna menjalankan program hasil kompilasi.</li>
+                <li>Program menanyakan panjang sisi kubus kepada pengguna.</li>
+                <li>Pengguna mengetikkan panjang sisi kubus dalam bentuk bilangan bulat.</li>
+                <li>Program menghitung hasil dengan formula: <i>s</i><sup>3</sup> (dibaca: <i>s</i> pangkat 3) atau lebih
+                    mudahnya, <i>s</i> dikali <i>s</i> dikali <i>s</i>.</li>
+                <li>Program mencetak hasil dalam bentuk angka ke <i>standard output</i> (<i>stdout</i>).</li>
+            </ol>
+        </div>
+
+        <div class="section" aria-role="section">
+            <h1>Hasil</h1>
+            <div class="section" aria-role="section">
+                <h2>1. <code>Makefile</code></h2>
+                <pre><samp>mkdir ../dist<br/>g++ -O0 -static -fpermissive functional.cpp -o ../dist/functional<br/>g++ -O0 -static -fpermissive procedural.cpp -o ../dist/procedural</samp></pre>
+            </div>
+            <div class="section" aria-role="section">
+                <h2>2. <code>functional.cpp</code></h2>
+                <pre><samp>Masukkan panjang sisi kubus: 4<br/><br/>Volume kubus adalah: <br/>64</samp></pre>
+            </div>
+            <div class="section" aria-role="section">
+                <h2>3. <code>procedural.cpp</code></h2>
+                <pre><samp>Masukkan panjang sisi: 4<br/><br/>Volume kubus adalah: <br/>64</samp></pre>
+            </div>
+        </div>
+
+
+
+        <!-- Referensi -->
+        <div style="display:none">
+            <div style="margin:0.5em 0em">&nbsp;</div>
+
+            <div style="text-align:center !important">
+            
+            <h1>Kata Pengantar</h1>
+            </div style="text-align:center !important">
+            
+            <p style="text-indent:1cm">Puji syukur kita panjatkan kehadirat Allah SWT yang telah memberikan rahmat serta hidayah-Nya sehingga kami bisa menyelesaikan tugas Laporan hasil pengamatan yang berjudul “Menghitung Volume Kubus Menggunakan Bahasa Pemrograman C++”.</p>
+            
+            <p style="text-indent:1cm">Terima kasih atas Ustadzah Nurul Izza Rahmaniya selaku guru Informatika yang telah meluangkan waktunya untuk kami dan telah memberi saran dan masukan yang sangat membantu bagi kami untuk menyelesaikan laporan ini.</p>
+            
+            <p style="text-indent:1cm">Di samping itu, kami berterima kasih kepada Ustadz Jailani S,Ag,Ma selaku Kepala Sekolah Madrasah Tsanawiyah Negeri 1 Lumajang dan ucap dari kami kepada pembaca yang membaca laporan ini.</p>
+            
+            <p style="text-indent:1cm">Kami menyadari bahwa laporan hasil percobaan ini masih jauh dari kata sempurna, jadi kami sangat mengharapkan masukan dari para pembaca. Akhir kata, kami mengucapkan sekali lagi terima kasih kepada pembaca yang membaca laporan ini.</p>
+            
+            <p>Penulis</p>
+            <div style="margin:0.5em 0em">&nbsp;</div>
+            
+            <div style="text-align:center !important">
+            
+            <h1>Tujuan</h1>
+            </div style="text-align:center !important">
+            
+            <p style="text-indent:1cm">Adapun tujuan kami dengan proyek ini adalah untuk memenuhi tugas proyek mata pelajaran Informatika dan untuk mempelajari bahasa pemrograman C++ lebih dalam lagi.</p>
+            
+            <div style="margin:0.5em 0em">&nbsp;</div>
+            
+            <div style="text-align:center !important">
+            
+            <h1>Kajian Teori</h1>
+            </div style="text-align:center !important">
+            
+            <h2>1. Bahasa Pemrograman C++</h2>
+            <p style="text-indent:1cm">C++ adalah salah satu bahasa pemrograman tertua di dunia. C++ merupakan fitur tambahan untuk bahasa pemrograman C. Artinya, kode C yang valid juga merupakan kode C++ yang valid pula.</p>
+            
+            <p style="text-indent:1cm">Untuk menjalankan sebuah program C++, program tersebut harus melewati tahap _kompilasi_ supaya dapat dijalankan oleh komputer dengan performa maksimal. Ada banyak alat-alat kompilasi untuk C++ yang bisa Anda pilih, diantaranya GCC (_GNU Compiler Collection_) dan Microsoft Visual C++.</p>
+            
+            <h2>2. Bangun Ruang</h2>
+            <p style="text-indent:1cm">Bangun ruang adalah bangun yang memiliki panjang, lebar, dan juga tinggi. Bangun ruang juga bisa disebut bangun tiga-dimensi. Contoh-contoh bangun ruang antara lain kubus, balok, bola, limas, kerucut, piramida, dan sebagainya.</p>
+            
+            <p style="text-indent:1cm">Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus dengan informasi yang diberikan pengguna melalui _standard input_. Program ini kami tulis dengan dua cara, yaitu prosedural (`procedural.cpp`) dan fungsional (`functional.cpp`).</p>
+            
+            <div style="margin:0.5em 0em">&nbsp;</div>
+            
+            <div style="text-align:center !important">
+            
+            <h1>Alat dan Bahan</h1>
+            </div style="text-align:center !important">
+            
+            <p>Kami menggunakan peralatan sebagaimana berikut:</p>
+            <ul>
+            <li>Komputer dengan sistem operasi Linux</li>
+            <li>GNU GCC untuk mengkompilasi program</li>
+            <li>GNU make untuk membantu proses kompilasi</li>
+            </ul>
+            <p>Untuk memasang di sistem Linux Debian atau Ubuntu, jalankan:</p>
+            <pre><code>sudo apt install gcc g++ binutils make
+            </code></pre>
+            <div style="margin:0.5em 0em">&nbsp;</div>
+            
+            <div style="text-align:center !important">
+            
+            <h1>Cara Kompilasi Program</h1>
+            </div style="text-align:center !important">
+            
+            <p>Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:</p>
+            <ol>
+            <li>Membuka terminal.</li>
+            <li>Menuju ke direktori <code>src</code>, dimana kode sumber program berada.</li>
+            <li>Menjalankan skrip Makefile dengan mengetikkan <code>make</code>.</li>
+            <li>Hasil kompilasi dapat ditemukan pada direktori <code>dist</code> pada akar repositori.</li>
+            </ol>
+            <div style="margin:0.5em 0em">&nbsp;</div>
+            
+            <div style="text-align:center !important">
+            
+            <h1>Cara Kerja Program</h1>
+            </div style="text-align:center !important">
+            
+            <p>Program bekerja sebagaimana berikut:</p>
+            <ol>
+            <li>Pengguna menjalankan program hasil kompilasi.</li>
+            <li>Program menanyakan panjang sisi kubus kepada pengguna.</li>
+            <li>Pengguna mengetikkan panjang sisi kubus dalam bentuk bilangan bulat.</li>
+            <li>Program menghitung hasil dengan formula: _s_^3 (dibaca: <em>s</em> pangkat 3) atau lebih mudahnya, <em>s</em> dikali <em>s</em> dikali <em>s</em>.</li>
+            <li>Program mencetak hasil dalam bentuk angka pada <em>standard output</em> (<em>stdout</em>).</li>
+            </ol>
+            <div style="margin:0.5em 0em">&nbsp;</div>
+            
+            <div style="text-align:center !important">
+            
+            <h1>Hasil</h1>
+            </div style="text-align:center !important">
+            
+            <h2>1. <code>Makefile</code></h2>
+            <pre><code>mkdir ../dist
+            g++ -O0 -static -fpermissive functional.cpp -o ../dist/functional
+            g++ -O0 -static -fpermissive procedural.cpp -o ../dist/procedural
+            </code></pre>
+            <h2>2. <code>procedural.cpp</code></h2>
+            <pre><code>Masukkan panjang sisi kubus: 4
+            
+            Volume kubus adalah: 
+            64
+            </code></pre>
+            <h2>3. <code>functional.cpp</code></h2>
+            <pre><code>Masukkan panjang sisi: 4
+            
+            Volume kubus adalah: 
+            64
+            </code></pre>
+            </div>
+        </div>
+    </body>
+</html>
