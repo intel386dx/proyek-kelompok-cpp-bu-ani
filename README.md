@@ -1,3 +1,5 @@
+<div style="max-width:210mm;margin:auto">
+
 <div style="text-align:center !important"><h3>
 
 Laporan Proyek PAS Semester 5\
@@ -40,7 +42,7 @@ Menggunakan Bahasa Pemrograman C++
 
 Puji syukur kita panjatkan kehadirat Allah SWT yang telah memberikan rahmat serta hidayah-Nya sehingga kami bisa menyelesaikan tugas Laporan hasil pengamatan yang berjudul “Menghitung Volume Kubus Menggunakan Bahasa Pemrograman C++”. 
 
-Terima kasih atas  Ustadzah Nurul Izza Rahmaniya selaku guru Informatika yang telah meluangkan waktunya untuk kami dan telah memberi saran dan masukan yang sangat membantu bagi kami untuk menyelesaikan laporan ini.
+Terima kasih atas Ustadzah Nurul Izza Rahmaniya selaku guru Informatika yang telah meluangkan waktunya untuk kami dan telah memberi saran dan masukan yang sangat membantu bagi kami untuk menyelesaikan laporan ini.
 
 Di samping itu, kami berterima kasih kepada Ustadz Jailani S,Ag,Ma selaku Kepala Sekolah Madrasah Tsanawiyah Negeri 1 Lumajang dan ucap dari kami kepada pembaca yang membaca laporan ini.
 
@@ -82,7 +84,11 @@ Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus denga
 
 ## 2. Alat yang Diperlukan
 
-Alat-alat yang diperlukan hanyalah sebuah komputer dengan sistem operasi _Windows_, _Linux_, atau yang lainnya, sebuah alat kompilasi kode C++, dan _GNU make_. Kami menggunakan sistem operasi _Linux_ dan alat kompilasi GCC (_GNU Compiler Collection_) yang bebas dan sumber terbuka.
+Kami menggunakan peralatan sebagaimana berikut:
+
+* Komputer dengan sistem operasi Linux
+* GNU GCC untuk mengkompilasi program
+* GNU make untuk membantu proses kompilasi
 
 Untuk memasang di sistem Linux Debian atau Ubuntu, jalankan:
 
@@ -105,9 +111,10 @@ Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:
 Program bekerja sebagaimana berikut:
 
 1. Pengguna menjalankan program hasil kompilasi.
-2. Pengguna mengetikkan panjang sisi kubus dalam bentuk bilangan bulat.
-3. Program menghitung hasil dengan formula: _s_^3 (dibaca: _s_ pangkat 3) atau _s_ dikali _s_ dikali _s_.
-4. Program mencetak hasil dalam bentuk angka pada _standard output_ (_stdout_).
+2. Program menanyakan panjang sisi kubus kepada pengguna.
+3. Pengguna mengetikkan panjang sisi kubus dalam bentuk bilangan bulat.
+4. Program menghitung hasil dengan formula: _s_^3 (dibaca: _s_ pangkat 3) atau lebih mudahnya, _s_ dikali _s_ dikali _s_.
+5. Program mencetak hasil dalam bentuk angka pada _standard output_ (_stdout_).
 
 ## 5. Hasil dari Program
 
@@ -136,3 +143,5 @@ Masukkan panjang sisi: 4
 Volume kubus adalah: 
 64
 ```
+
+</div>
