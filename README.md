@@ -1,42 +1,44 @@
-<div style="text-align:center"><h3>
+<style>[c]{text-align:center}</style>
+
+<div c=""><h3>
 
 Laporan Proyek PAS Semester 5\
 Menghitung Volume Kubus\
 Menggunakan Bahasa Pemrograman C++
 
-</h3></div style="text-align:center">
+</h3></div c="">
 
-<div style="text-align:center">
+<div c="">
 
 ![Lambang MTs Negeri 1 Lumajang](_assets/logo_mtsn.gif)
 
-</div style="text-align:center">
+</div c="">
 
-<div style="text-align:center">
+<div c="">
 
 **Dikerjakan oleh :**
 
 1\. Hilman Ahwas Adliyansyah\
 2\. Mochammad Tegar Firdaus
 
-</div style="text-align:center">
+</div c="">
 
-<div style="text-align:center">
+<div c="">
 
 <h3 style="margin-bottom:0.25em">MTs Negeri 1 Lumajang</h3>
 <address style="font-style:normal">Jl. Citandui No. 75 Kel. Rogotrunan, Kec. Lumajang, Kab. Lumajang</address>
 
 2023
 
-</div style="text-align:center">
+</div c="">
 
 ------------------------------------------------------------------
 
-<div style="text-align:center">
+<div c="">
 
 # Kata Pengantar
 
-</div style="text-align:center">
+</div c="">
 
 Puji syukur kita panjatkan kehadirat Allah SWT yang telah memberikan rahmat serta hidayah-Nya sehingga kami bisa menyelesaikan tugas Laporan hasil pengamatan yang berjudul “Menghitung Volume Kubus Menggunakan Bahasa Pemrograman C++”. 
 
@@ -50,21 +52,21 @@ Penulis
 
 ------------------------------------------------------------------
 
-<div style="text-align:center">
+<div c="">
 
 # Tujuan
 
-</div style="text-align:center">
+</div c="">
 
 Adapun tujuan kami dengan proyek ini adalah untuk memenuhi tugas proyek mata pelajaran Informatika dan untuk mempelajari bahasa pemrograman C++ lebih dalam lagi.
 
 ------------------------------------------------------------------
 
-<div style="text-align:center">
+<div c="">
 
 # Laporan Proyek
 
-</div style="text-align:center">
+</div c="">
 
 ## 1. Kajian Teori
 
