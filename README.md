@@ -80,7 +80,7 @@ Untuk menjalankan sebuah program C++, program tersebut harus melewati tahap _kom
 
 Bangun ruang adalah bangun yang memiliki panjang, lebar, dan juga tinggi. Bangun ruang juga bisa disebut bangun tiga-dimensi. Contoh-contoh bangun ruang antara lain kubus, balok, bola, limas, kerucut, piramida, dan sebagainya.
 
-Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus dengan informasi yang diberikan pengguna melalui _standard input_. Program ini kami tulis dengan dua cara, yaitu prosedural dan fungsional.
+Di proyek ini, kami akan menulis program C++ untuk menghitung volume kubus dengan informasi yang diberikan pengguna melalui _standard input_. Program ini kami tulis dengan dua cara, yaitu prosedural (`procedural.cpp`) dan fungsional (`functional.cpp`).
 
 ## 2. Alat yang Diperlukan
 
@@ -102,7 +102,7 @@ Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:
 
 1. Membuka terminal.
 2. Menuju ke direktori `src`, dimana kode sumber program berada.
-3. Menjalankan `make`.
+3. Menjalankan skrip Makefile dengan mengetikkan `make`.
 4. Hasil kompilasi dapat ditemukan pada direktori `dist` pada akar repositori.
 
 
