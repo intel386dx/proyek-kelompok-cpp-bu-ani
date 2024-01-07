@@ -1,44 +1,44 @@
 <div style="max-width:210mm;margin:auto;font-family:serif">
 
-<div style="text-align:center !important"><h3>
+<div align="center"><h3>
 
 Laporan Proyek PAS Semester 5\
 Menghitung Volume Kubus\
 Menggunakan Bahasa Pemrograman C++
 
-</h3></div style="text-align:center !important">
+</h3></div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 ![Lambang MTs Negeri 1 Lumajang](_assets/logo_mtsn.gif)
 
-</div style="text-align:center !important">
+</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 **Dikerjakan oleh :**
 
 1\. Hilman Ahwas Adliyansyah\
 2\. Mochammad Tegar Firdaus
 
-</div style="text-align:center !important">
+</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 <h3 style="margin-bottom:0.25em">MTs Negeri 1 Lumajang</h3>
 <address style="font-style:normal">Jl. Citandui No. 75 Kel. Rogotrunan, Kec. Lumajang, Kab. Lumajang</address>
 
 2023
 
-</div style="text-align:center !important">
+</div>
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Kata Pengantar
 
-</div style="text-align:center !important">
+</div>
 
 <p style="text-indent:1cm">Puji syukur kita panjatkan kehadirat Allah SWT yang telah memberikan rahmat serta hidayah-Nya sehingga kami bisa menyelesaikan tugas Laporan hasil pengamatan yang berjudul “Menghitung Volume Kubus Menggunakan Bahasa Pemrograman C++”.</p>
 
@@ -52,21 +52,21 @@ Penulis
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Tujuan
 
-</div style="text-align:center !important">
+</div>
 
 <p style="text-indent:1cm">Adapun tujuan kami dengan proyek ini adalah untuk memenuhi tugas proyek mata pelajaran Informatika dan untuk mempelajari bahasa pemrograman C++ lebih dalam lagi.</p>
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Kajian Teori
 
-</div style="text-align:center !important">
+</div>
 
 ## 1. Bahasa Pemrograman C++
 
@@ -82,11 +82,11 @@ Penulis
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Alat dan Bahan
 
-</div style="text-align:center !important">
+</div>
 
 Kami menggunakan peralatan sebagaimana berikut:
 
@@ -102,11 +102,11 @@ sudo apt install gcc g++ binutils make
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Cara Kompilasi Program
 
-</div style="text-align:center !important">
+</div>
 
 Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:
 
@@ -117,11 +117,11 @@ Kami mengkompilasi kode sumber menjadi program dengan cara sebagaimana berikut:
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Cara Kerja Program
 
-</div style="text-align:center !important">
+</div>
 
 Program bekerja sebagaimana berikut:
 
@@ -133,11 +133,11 @@ Program bekerja sebagaimana berikut:
 
 <div style="margin:0.5em 0em">&nbsp;</div>
 
-<div style="text-align:center !important">
+<div align="center">
 
 # Hasil
 
-</div style="text-align:center !important">
+</div>
 
 ## 1. `Makefile`
 
